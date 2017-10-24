@@ -1,8 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alexsatur/Desktop/bookmark_manager/spec/features/viewing_links_spec.rb": [
+      "/Users/alexsatur/Desktop/bookmark_manager/spec/features/testing_infrastructure_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
+        null
+      ],
+      "/Users/alexsatur/Desktop/bookmark_manager/spec/features/viewing_links_spec.rb": [
         1,
         1,
         1,
@@ -15,6 +23,6 @@
         null
       ]
     },
-    "timestamp": 1508847214
+    "timestamp": 1508858705
   }
 }
