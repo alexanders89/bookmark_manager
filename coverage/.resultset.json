@@ -1,6 +1,19 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/alexsatur/Desktop/bookmark_manager/spec/features/adding_multiple_tage_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/alexsatur/Desktop/bookmark_manager/spec/features/adding_tags_spec.rb": [
         1,
         null,
@@ -9,7 +22,6 @@
         1,
         1,
         1,
-        null,
         1,
         1,
         1,
@@ -74,6 +86,6 @@
         null
       ]
     },
-    "timestamp": 1508870142
+    "timestamp": 1508928849
   }
 }
