@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-25T12:33:25+01:00">2017-10-25T12:33:25+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-25T17:11:59+01:00">2017-10-25T17:11:59+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -24,16 +24,16 @@
     (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="green">
+         1.02
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>7</b> files in total.
-    <b>60</b> relevant lines. 
-    <span class="green"><b>60</b> lines covered</span> and
+    <b>58</b> relevant lines. 
+    <span class="green"><b>58</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -101,13 +101,13 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#a985b6f09e67abd8a2a64229a58ce70cb3d7424a" class="src_link" title="spec/features/user_sign_up_spec.rb">spec/features/user_sign_up_spec.rb</a></td>
+        <td class="strong"><a href="#2ed0bcd6e04afc2f898cf3dfb40efe715b7ac13d" class="src_link" title="spec/features/user_management_spec.rb">spec/features/user_management_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
         <td>7</td>
-        <td>7</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -603,13 +603,13 @@
 </div>
 
       
-        <div class="source_table" id="a985b6f09e67abd8a2a64229a58ce70cb3d7424a">
+        <div class="source_table" id="2ed0bcd6e04afc2f898cf3dfb40efe715b7ac13d">
   <div class="header">
-    <h3>spec/features/user_sign_up_spec.rb</h3>
+    <h3>spec/features/user_management_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -620,52 +620,40 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">feature &#39;User sign in&#39; do</code>
+          <code class="ruby">feature &#39;User sign up&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  scenario &#39;user can sign in to view just their links&#39; do</code>
+          <code class="ruby">  scenario &#39;User can sign up&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
-          <code class="ruby">    visit &#39;/&#39;</code>
+          <code class="ruby">    expect { sign_up }.to change(User, :count).by(1)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;username&#39;,   with: &#39;owliver@owlmail.com&#39;</code>
+          <code class="ruby">    expect(page).to have_content(&#39;Welcome owliver@owlmail.com&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;password&#39;, with: &#39;1234&#39;</code>
+          <code class="ruby">    expect(User.first.username).to eq(&#39;owliver@owlmail.com&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_button &#39;Login&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    expect(page).to have_content &quot;Welcome owliver@owlmail.com&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>

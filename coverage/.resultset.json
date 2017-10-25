@@ -73,12 +73,10 @@
         null,
         null
       ],
-      "/Users/alexsatur/Desktop/bookmark_manager/spec/features/user_sign_up_spec.rb": [
+      "/Users/alexsatur/Desktop/bookmark_manager/spec/features/user_management_spec.rb": [
         1,
         1,
-        1,
-        1,
-        1,
+        2,
         1,
         1,
         null,
@@ -97,6 +95,6 @@
         null
       ]
     },
-    "timestamp": 1508931205
+    "timestamp": 1508947919
   }
 }
