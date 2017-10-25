@@ -6,13 +6,25 @@ require_relative 'data_mapper_setup'
 
 class BookmarkManager < Sinatra::Base
 
+  enable :sessions
+
   get '/testing' do
     'Testing Infrastructure OK'
+  end
+
+  get '/' do
+    erb :'links/signin'
+  end
+
+  post '/signin' do
+    $user = (params[:username])
+    redirect '/links'
   end
 
 
   get '/links' do
     @links = Link.all
+    @user = $user
     erb :'links/index'
   end
 
